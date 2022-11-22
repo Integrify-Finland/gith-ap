@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const getUser = () => {
       // Making a request from the Server
-      fetch('http://localhost:5000/auth/login/success', {
+      fetch(`http://localhost:${process.env.PORT}/auth/login/success`, {
       method: "GET",
       credentials: "include",
       headers: {
